@@ -1,0 +1,203 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #47332B;
+    color: #8F78C6;
+    padding: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    
+  background-color: #47332B;
+  color: #ffffff;
+  padding: 10px;
+    
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 40px 0;
+}
+
+.container {
+    
+  max-width: 1200px;
+  text-align: center;
+    
+}
+
+
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #7B4A36;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  nav a:hover {
+    background-color:#513023;
+  }
+
+  .buscador{
+
+    color: black;
+
+  }
+
+  
+  /* Estilos para la sección del carrusel */
+  
+  .carousel-item img {
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  /* Estilos para la sección "Acerca de Nosotros" */
+  #about-me {
+    margin-top: 2rem;
+  }
+  
+  #about-me h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #about-me p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.shop-01{
+
+  margin-top: 60px;
+
+}
+
+.shop-02  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-03 {
+    flex-basis: 33.33%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.shop-03 p{
+
+  display: inline-block;
+  margin-left: 20px;
+
+}
+
+
+.shop-03 img {
+
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 2px #ccc;
+  width: 250px;
+  height: 250px;
+  
+}
+
+.shop-03 img:hover {
+ 
+  transform: scale(1.1);
+
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #064181;
+    border-color: #005cbf;
+}
+
+
+.social-icon {
+  display: inline-block;
+  font-size: 48px;
+  margin-right: 40px;
+  transition: transform 0.2s ease-in-out;
+  color: rgb(255, 246, 123);
+ }
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.copy{
+
+  text-align: center;
+
+}
+
+.map{
+
+  justify-content: center;
+  text-align: center;
+    
+}
+
+/*Filtro*/
+.center{
+
+  display: flex;
+  justify-content: right;
+  margin-bottom: 25px;
+
+}
+
+.search-bar-01{
+
+  width: 300px;
+  height: 40px;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+
+}
