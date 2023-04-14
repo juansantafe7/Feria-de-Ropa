@@ -1,9 +1,90 @@
-/* Estilos para el encabezado */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+*{
+
+  box-sizing: border-box;
+  font-family: 'Work Sans';
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Estilos para el encabezado
 header {
     background-color: #47332B;
     color: #8F78C6;
     padding: 20px;
+} */
+
+html{
+
+  scroll-behavior: smooth;
+
 }
+
+#inicio{
+
+  background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)),url();
+  background-size: cover;
+  background-position: center center;
+
+}
+
+#inicio .contenido header{
+
+  background-color: rgba(0,0,0, .8);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+
+}
+
+#inicio .contenido header .contenido-header{
+
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+}
+
+#inicio .contenido header .contenido-header{
+
+  text-align: center;
+  color: #ff5080;
+
+}
+
+#inicio .contenido header .contenido-header nav ul{
+
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+}
+
+#inicio .contenido header .contenido-header nav ul li a{
+
+  text-decoration: none;
+  color: #fff;
+  margin: 0 12px;
+  font-weight: 400;
+  transition: .5s;
+
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover{
+
+  color: #ff5080;
+
+}
+
+
+
+
+
 
 /* Estilos para el pie de página */
 footer {
@@ -29,7 +110,7 @@ main {
 
 
 /* Estilos para el menú de navegación */
-nav {
+/* nav {
     background-color: #7B4A36;
   }
   
@@ -47,8 +128,9 @@ nav {
 
     color: black;
 
-  }
+  } */
 
+ 
   
   /* Estilos para la sección del carrusel */
   
@@ -76,7 +158,7 @@ nav {
 h1 {
     font-size: 36px;
     text-align: center;
-    margin-bottom: 50px;
+    font-weight: bold;
 }
 
 .shop-01{
@@ -199,5 +281,79 @@ p {
   font-size: 1.5rem;
   padding: 1rem;
   border-radius: 2rem;
+
+}
+
+.title-01{
+
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(204, 0, 136);
+  display: inline-block;
+
+
+}
+
+#icono-nav{
+
+  display: none;
+
+}
+
+.productos-fondo{
+
+  background-image: url('https://img.freepik.com/vector-gratis/textura-madera-blanca-tablon-fondo_64749-2269.jpg?size=626&ext=jpg');
+  background-size: cover;
+  background-position: center center;
+
+}
+
+
+
+/* Seccion responsive */
+
+@media screen and (max-width: 800px){
+
+  .map{
+
+    display: none;
+
+  }
+
+  nav{
+
+    display: none;
+
+  }
+
+  #icono-nav{
+
+    display: block;
+  
+  }
+  nav.responsive{
+
+    display: block;
+    background-color: rgba(0,0,0, .8);
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    left: 0;
+
+
+  }
+  nav.responsive ul{
+
+    display: block !important;
+    text-align: center;
+
+  }
+  nav.responsive ul li{
+
+    margin: 10px 0;
+
+  }
+
 
 }

@@ -34,7 +34,7 @@
 
 <body>
 
-    <header>
+    <!-- <header>
 
         <nav class="navbar navbar-expand-lg navbar-dark">
 
@@ -60,7 +60,7 @@
                     
                       <li class="nav-item">
                   
-                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                        <a class="nav-link" href="">Sobre Nosotros</a>
                   
                     </li>
 
@@ -77,21 +77,67 @@
                
             </div>
 
-            <form action="total-productos.html" id="search-form" class="d-flex" method="GET">
 
-                <input type="text" name="q" class="form-control me-2" aria-label="Buscar" id="search-input" placeholder="Buscar..." pattern="[a-z\s]+" required>
-              
-                <button type="submit" class="btn btn-outline-success buscador">Buscar</button>  
-              
-              </form>
                       
                    
             </div>
        
         </nav>
    
-    </header>
+    </header> -->
     
+    <section id="inicio">
+
+        <div class="contenido">
+
+            <header>
+
+                <div class="contenido-header">
+
+                    
+
+                    <h1>Logo</h1>
+
+                    <nav id="nav" class="">
+
+                        <ul id="links">
+
+                            <li><a href="#inicio">INICIO</a></li>
+                            <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                            <li><a href="#contacto">CONTACTO</a></li>
+                            <li><a href="#productos">PRODUCTOS</a></li>
+
+                        </ul>
+
+                    </nav>
+
+                    <div id="icono-nav" onclick="responsiveMenu()">
+
+                        <i class="bi bi-list"></i>
+
+                    </div>
+
+                    <div>
+
+                        <form action="total-productos.html" id="search-form" class="d-flex" method="GET">
+
+                            <input type="text" name="q" class="form-control me-2" aria-label="Buscar" id="search-input" placeholder="Buscar..." pattern="[a-z\s]+" required>
+                          
+                            <button type="submit" class="btn btn-outline-success buscador">Buscar</button>  
+                          
+                        </form>
+
+                    </div>
+            
+
+                </div>
+                
+            </header>
+
+        </div>
+
+    </section>
+
     <section>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -156,7 +202,7 @@
                
                 <div class="col-md-12" id="contacto">
                   
-                    <h4>Síguenos en nuestras redes sociales</h4>
+                    <h1>Síguenos en <span class="auto-input-02 title-01"></span></h1>
                     <ul class="social-icons">
                         <li><a href="https://es-la.facebook.com/" class="fa social-icon"><i class="bi bi-facebook"></i></a></li>
                         <li><a href="https://twitter.com/" class="fa social-icon"><i class="bi bi-twitter"></i></a></li>
@@ -182,11 +228,14 @@
 
     </section>
 
-    <section>
+    <section class="productos-fondo container-fluid" id="productos">
+        
+
         
         <div class="shop-01 container-fluid">
         
-            <h1>Productos Destacados</h1>
+
+            <h1>Productos de <span class="auto-input title-01"></span></h1>
 
             <div class="center">
 
@@ -198,7 +247,7 @@
 
             <div class="shop-02 row">
         
-                <div class="shop-03 col-sm-4">
+                <div class="shop-03 col-sm-6">
         
                     <img src="assets/ropa-04.png" alt="Producto 1">
         
@@ -213,7 +262,7 @@
         
                 </div>
         
-                <div class="shop-03 col-sm-4">
+                <div class="shop-03 col-sm-6">
         
                     <img src="assets/ropa-02.png" alt="Producto 1">
         
@@ -228,7 +277,7 @@
         
                 </div>
           
-                <div class="shop-03 col-sm-4">
+                <div class="shop-03 col-sm-6">
         
                     <img src="assets/ropa-03.png" alt="Producto 1">
         
@@ -243,7 +292,7 @@
         
                 </div>
 
-                <div class="shop-03 col-sm-4">
+                <div class="shop-03 col-sm-6">
         
                     <img src="assets/ropa-01.png" alt="Producto 1">
         
@@ -258,7 +307,7 @@
         
                 </div>
 
-                <div class="shop-03 col-sm-4">
+                <div class="shop-03 col-sm-6">
         
                     <img src="assets/ropa-05.png" alt="Producto 1">
         
@@ -273,7 +322,7 @@
         
                 </div>
 
-                <div class="shop-03 col-sm-4">
+                <div class="shop-03 col-sm-6">
         
                     <img src="assets/ropa-06.png" alt="Producto 1">
         
@@ -288,7 +337,7 @@
         
                 </div>
 
-                <div class="shop-03 col-sm-4">
+                <div class="shop-03 col-sm-6">
         
                     <img src="assets/ropa-07.png" alt="Producto 1">
         
@@ -303,7 +352,7 @@
         
                 </div>
 
-                <div class="shop-03 col-sm-4">
+                <div class="shop-03 col-sm-6">
         
                     <img src="assets/ropa-08.png" alt="Producto 1">
         
@@ -318,7 +367,7 @@
         
                 </div>
 
-                <div class="shop-03 col-sm-4">
+                <div class="shop-03 col-sm-6">
         
                     <img src="assets/ropa-09.png" alt="Producto 1">
         
@@ -367,7 +416,8 @@
 
 
 
-    
+    <!-- Typed.JS (Typing Effect) -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
     <!-- jquery -->
@@ -377,6 +427,8 @@
     <!-- js file -->
     <script src="archivos-js/buscador.js"></script>
     <script src="archivos-js/filtro-ropa.js"></script>
+    <script src="archivos-js/efecto-texto.js"></script>
+
 
 
 
