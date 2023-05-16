@@ -38,3 +38,12 @@ function filtrarProductos() {
   }
   
   filtrarProductos();
+
+  // Obtener el elemento del campo de entrada
+  var searchInput = document.getElementById('search-input');
+
+  // Agregar un controlador de eventos para el evento 'input' del campo de entrada
+  searchInput.addEventListener('input', function() {
+    // Convertir el valor del campo de entrada a minúsculas
+    searchInput.value = searchInput.value.toLowerCase();
+  });
